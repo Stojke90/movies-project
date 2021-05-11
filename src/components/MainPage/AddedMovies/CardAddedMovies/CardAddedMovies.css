@@ -1,0 +1,52 @@
+.toWatchMovie {
+	width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #00000033;
+    border-radius: 14px;
+    -webkit-animation: showUp 3s linear;
+       -moz-animation: showUp 3s linear;
+         -o-animation: showUp 3s linear;
+            animation: showUp 3s linear;
+}
+
+@keyframes showUp {
+
+	0%{opacity:0;}
+	50%{opacity:0.5;}
+	100%{opacity:1;}
+	
+}
+
+.tumnbnails {
+	width: 25%;
+}
+
+.genre {
+	width: 60%;
+	padding-left: 20px;
+}
+
+.genre > p {
+	line-height: 1.5;
+}
+
+.btn {
+	width: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.btn > button {
+	background: transparent;
+    cursor: pointer;
+    border-style: hidden;
+    margin-right: 6px;
+}
+
+.btn > button > img {
+	width: 40px;
+}

@@ -1,0 +1,19 @@
+.moviesToWatch {
+    width: 80%;
+    margin: 100px auto 0px;
+    margin-bottom: 50px;
+}
+
+.addAndFilter {
+	margin: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.addAndFilter > img {
+	width: 4%;
+    background-color: #51193845;
+    cursor: pointer;
+}

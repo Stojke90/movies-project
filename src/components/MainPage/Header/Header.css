@@ -1,0 +1,43 @@
+.header {
+	width: 600px;
+    margin: 30px auto 0;
+}
+
+.header > h1 {
+	position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+.searchInput {
+	display: block;
+    margin: auto;
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+    border-style: none;
+    border-bottom-style: groove;
+    border-width: thick;
+    border-color: coral;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-indent: 15px;
+    color: #ffed30;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 10px;
+    caret-color: red;
+}
+
+.searchInput::placeholder {
+    color: red;
+    font-size: 14px;
+    text-indent: 70px;
+    padding-bottom: 5px;
+}
+
+.searchInput:focus {
+   border-color: red;
+}

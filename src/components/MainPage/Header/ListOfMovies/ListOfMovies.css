@@ -1,0 +1,28 @@
+.listOfSearchMovies {
+   /*  display: none; */
+	width: 200px;
+    border-style: groove;
+    padding: 5px;
+    overflow: auto;
+    max-height: 200px;
+    position: absolute;
+    left: 583px;
+    border-top: none;
+}
+
+.searchMovie {
+	display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-bottom-style: ridge;
+    border-color: #f0f8ff12;
+    padding-bottom: 4px;
+}
+
+.movieName {
+	
+}
+
+.addBtn {
+	cursor: pointer;
+}
