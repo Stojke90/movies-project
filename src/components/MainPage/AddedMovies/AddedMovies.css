@@ -1,19 +1,53 @@
 .moviesToWatch {
     width: 80%;
-    margin: 100px auto 0px;
-    margin-bottom: 50px;
+    margin: 80px auto 0px;
+    max-height: 555px;
+    overflow: auto;
 }
 
 .addAndFilter {
-	margin: auto;
+    margin: auto;
     display: flex;
-    width: 80%;
+    width: 60%;
     justify-content: space-between;
-    margin-bottom: 10px;
+    position: relative;
+    top: 70px;
+}
+.filterBtn, .filterBtn > h2 {
+    width:50%;
 }
 
-.addAndFilter > img {
-	width: 4%;
-    background-color: #51193845;
+.filterBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.filterBtn > p {
+    margin-right: 5px;
+    color: #ff4500;
+    user-select: none;
+}
+
+.filterBtn > img {
+    width: 7%;
     cursor: pointer;
+}
+
+.noMovie {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff8c00f5;
+    animation: blink 3s linear infinite;
+    user-select: none;
+}
+
+@keyframes blink {
+    0%{color:#ff8c00f5;}
+    25%{color:#ff8c0091;}
+    50%{color:#ff8c0063;}
+    75%{color:#ff8c0091;}
+    100%{color:#ff8c00f5;}
+    
 }

@@ -1,17 +1,13 @@
 import React from 'react';
 import './ListOfMovies.css';
 
+const ListOfMovies = ({data, getMovieDetails}) => {
 
-const ListOfMovies = ({listOfMovies}) => {
-console.log(listOfMovies)
   return (
-
-      	<section className="listOfSearchMovies">
 	      	<article className="searchMovie">
-	      		<p className="movieName">{listOfMovies[0].Title}</p>
-	      		<button className="addBtn">add</button>
+	      		<p className="movieName">{data.Title}</p>
+	      		<button className="addBtn" onClick={() => getMovieDetails(data.imdbID)}>add</button>
 	      	</article>
-	    </section>
   );
 }
 

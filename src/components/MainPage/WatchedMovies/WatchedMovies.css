@@ -1,11 +1,12 @@
 .conteinerForWatchedMovies {
-	    width: 80%;
-    margin: 100px auto 0px;
-    margin-bottom: 50px;
+	width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    max-height: 555px;
+    overflow: auto;
 }
 
 .textWatched {
-	width: 80%;
-    margin: auto;
-    margin-bottom: 10px;
+	width: 60%;
+    margin: 100px auto 15px;
 }

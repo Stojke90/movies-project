@@ -1,35 +1,88 @@
-.movieCard {
-	width: 800px;
+
+.wraperMovieCard {
+    max-width: 800px;
+    width: 100%;
+    margin: 70px auto 0;
+    padding: 10px;
+}
+
+.head {
     display: flex;
-    margin: 6% auto 0;
-    padding: 50px;
-    justify-content: space-between;
-    background: #68606021;
+    margin-bottom: 20px;
+    line-height: 0.8;
 }
 
-.wraperImg {
-	width: 40%;
+.head > a {
+    width: 7%;
 }
 
-.imgMovie {
-	width: 100%;
-}
-
-.movieData {
-	width: 55%;
-	margin-top: 10px;
-    line-height: 1.5;
+.titleCard {
+    width: 93%;
+    font-size: 1.5em;
 }
 
 .btnBack {
-	clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-	position: fixed;
-    transform: scale(1.5);
-    left: 145px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
     cursor: pointer;
     color: transparent;
+    transform: scale(1.5);
 }
 
 .btnBack:hover {
-	background: #9370db;
+    background: #9370db;
+}
+/**/
+.movieCard {
+    background: #68606021;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+}
+
+.wraperImg {
+    width: 34%;
+}
+
+.imgMovie {
+    width: 100%;
+}
+
+.movieData {
+	width: 54%;
+	margin-top: 10px;
+    line-height: 2;
+    margin-left: 15px;
+}
+
+.height {
+    color: #f0f8ff;
+    font-style: italic;
+}
+
+.font900 {
+   color: #00f;
+   font-weight: 900;
+   text-shadow: 0 0 15px #00f;
+   margin-right: 10px;
+}
+
+.wrapRating {
+    width: 8%;
+    margin-top: 12px;
+}
+
+.ratingCard {
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    display: inline;
+    padding: 16px;
+    background: #f0f8ff78;
+    border-color: #639;
+    font-weight: 800;
+    color: #0000ffbd;
+}
+
+.wraperForActors {
+    display: flex;
 }

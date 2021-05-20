@@ -6,47 +6,97 @@
     margin-bottom: 20px;
     background-color: #00000033;
     border-radius: 14px;
-    -webkit-animation: showUp 3s linear;
-       -moz-animation: showUp 3s linear;
-         -o-animation: showUp 3s linear;
-            animation: showUp 3s linear;
+    -webkit-justify-content: space-evenly;
+            justify-content: space-evenly;
+    -webkit-animation: showUp 1.5s linear;
+       -moz-animation: showUp 1.5s linear;
+         -o-animation: showUp 1.5s linear;
+            animation: showUp 1.5s linear;
 }
 
 @keyframes showUp {
 
-	0%{opacity:0;}
-	50%{opacity:0.5;}
-	100%{opacity:1;}
+	0%{opacity:0;filter:blur(1px);}
+	50%{opacity:0.5;filter:blur(0.5px);}
+	100%{opacity:1;filter:blur(0);}
 	
 }
 
-.tumnbnails {
-	width: 25%;
+.rating, .btn {
+    width: 15%;
 }
 
-.genre {
-	width: 60%;
-	padding-left: 20px;
+.rating {
+    background: #c01d1d;
+    border-radius: 50%;
+    border-style: solid;
+    text-align: center;
+    line-height: 120px;
+    box-shadow: 0 0 14px 2px white, 
+                0 0 14px 2px #ffffffa1;
+    margin-top: 4px;
 }
 
-.genre > p {
-	line-height: 1.5;
+.rating > p {
+    font-size: 2.8em;
 }
 
 .btn {
-	width: 15%;
     display: flex;
-    align-items: flex-end;
+    height: 100%;
     justify-content: flex-end;
+    margin-top: 70px;
 }
 
-.btn > button {
-	background: transparent;
+.btn button {
+    width: 25px;
     cursor: pointer;
-    border-style: hidden;
-    margin-right: 6px;
+    background: transparent;
+    border-style: none;
+    margin-right: 5px;
 }
 
-.btn > button > img {
-	width: 40px;
+.btn button > img {
+    width: 100%;
+}
+
+.details {
+    width:70%;
+    padding: 20px 0px 10px 30px;
+    line-height: 50px;
+}
+
+.details a > p {
+    font-size: 1.3em;
+}
+
+.arrowUpDown {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrowUpDown button:first-child {
+    transform: rotate(180deg);
+}
+
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    color: #00f;
+}
+
+.genre {
+    display: flex;
+    color: #2f4f4f;
+}
+
+.genre > p {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.genre > p:hover {
+    color: #f0f8ff;
 }

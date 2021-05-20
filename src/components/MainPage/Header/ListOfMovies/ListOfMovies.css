@@ -1,28 +1,37 @@
+
 .listOfSearchMovies {
-   /*  display: none; */
-	width: 200px;
-    border-style: groove;
-    padding: 5px;
-    overflow: auto;
-    max-height: 200px;
-    position: absolute;
-    left: 583px;
-    border-top: none;
+  max-width: 400px;
+  width: 100%;
+  max-height: 140px;
+  border-style: groove;
+  padding: 5px;
+  overflow: auto;
+  border: none;
+  box-shadow: -3px 9px 20px 0px #000000eb;
+  margin: auto;
 }
 
 .searchMovie {
 	display: flex;
-    justify-content: space-between;
-    padding-top: 5px;
-    border-bottom-style: ridge;
-    border-color: #f0f8ff12;
-    padding-bottom: 4px;
+  justify-content: space-between;
+  padding-top: 5px;
+  border-bottom-style: ridge;
+  border-color: #f0f8ff12;
+  padding-bottom: 4px;
 }
 
 .movieName {
-	
+  margin-right: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 343px;
+  color: blueviolet;
+  font-style: italic;
 }
 
 .addBtn {
 	cursor: pointer;
+  background: transparent;
+  color: #f00;
 }

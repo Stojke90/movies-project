@@ -7,8 +7,191 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   scroll-behavior: smooth;
-  background-image: url('https://bit.ly/3bf1nGy');
+  background-image: url('https://bit.ly/3eNvneS');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.darkViolet {
+  color: #9400d3;
+  user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+    -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Response */
+
+
+/* Response first page,MainPage */
+
+@media all and (max-width: 1191px) {
+  .toWatchMovie .rating {
+    width: 129px;
+  }
+}
+
+@media all and (max-width: 1001px) {
+  .details .title {
+    max-width: 300px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .moviesToWatch .toWatchMovie, .conteinerForWatchedMovies .toWatchMovie {
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details .title {
+    max-width: 450px;
+    text-align: center;
+  }
+  .genre {
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+
+  .moviesToWatch .btn {
+    margin-top:0;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .moviesToWatch .btn > button {
+    margin-right: 25px;
+  }
+
+  .toWatchMovie .rating {
+    margin-top: 20px;
+  }
+
+  .moviesToWatch .btn img {
+    transform: scale(1.6);
+  }
+
+  .toWatchMovie .details {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .conteinerForWatchedMovies .toWatchMovie .btn {
+    margin-top: 0;
+    justify-content: center;
+    transform: scale(1.5);
+    margin-bottom: 5px;
+  }
+  .addAndFilter .filterBtn > img {
+    transform: scale(2.5);
+    margin-left: 5px;
+  }
+
+  #root .addAndFilter,  #root .textWatched {
+    width: 45%;
+  }
+
+  .moviesToWatch .toWatchMovie .btn .arrowUpDown {
+    display: block;
+  }
+
+  .moviesToWatch .toWatchMovie .btn .arrowUpDown button:first-child {
+    margin-right: 10px;
+  }
+
+}
+
+@media all and (max-width: 730px) {
+  .moviesToWatch .toWatchMovie .details .genre ,
+  .conteinerForWatchedMovies .toWatchMovie .details .genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .addAndFilter .filterBtn > p {
+    display: none;
+  }
+
+  .addAndFilter .filterBtn > img {
+    transform: scale(3.5);
+  }
+}
+
+
+/* Response Second page MovieCard */
+
+@media all and (max-width: 824px) {
+  #root .wraperMovieCard {
+    width: 85%;
+
+  }
+}
+
+@media all and (max-width: 720px) {
+  #root .wraperMovieCard .movieCard {
+    flex-direction: column;
+    display: block
+  }
+
+  #root .wraperMovieCard .movieCard .wraperImg {
+    width: 85%;
+    margin: 0 auto 25px;
+  }
+
+  #root .wraperMovieCard .movieCard .movieData {
+    width: 100%;
+  }
+
+  #root .wraperMovieCard .movieCard .wrapRating {
+    position: relative;
+    top: -300px;
+    left: 450px;
+  }
+
+  #root .wraperMovieCard .head .titleCard {
+    margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 665px) {
+  #root .wraperMovieCard .movieCard .wrapRating {
+    left: 389px;
+  }
+}
+
+@media all and (max-width: 616px) {
+  #root .wraperMovieCard .movieCard .wrapRating {
+    top: -340px;
+    left: 340px;
+  }
+}
+
+@media all and (max-width: 530px) {
+   #root .wraperMovieCard .movieCard .wrapRating {
+    top: -336px;
+    left: 300px;
+   }
 }
